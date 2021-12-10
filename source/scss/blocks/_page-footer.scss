@@ -1,0 +1,28 @@
+.page-footer {
+  // .page-footer__list
+  &__list {
+    display: flex;
+    flex: 1 1 33.3%;
+    justify-content: space-between;
+    align-items: start;
+  }
+  // .page-footer__item
+  &__item {
+  }
+
+  &__title{
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba($basic-black, 1);
+  }
+  // .page-footer__description
+  &__description {
+    color: rgba($basic-black, .5);
+  }
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 10px;
+}
