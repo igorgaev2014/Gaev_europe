@@ -1,6 +1,4 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
   // .page-header__anchor
   &__anchor {
   }
@@ -13,4 +11,13 @@
   margin: 0 auto;
   max-width: 1190px;
   padding: 0 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
 }

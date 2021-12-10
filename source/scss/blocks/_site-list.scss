@@ -1,10 +1,36 @@
 .site-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
   // .site-list__item
   &__item {
+    margin-right: 40px;
   }
+
+  &__item:last-of-type {
+    margin-right: 0;
+  }
+
+  :last-of-type a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: underline;
+    margin-left: 106px;
+  }
+
   // .site-list__anchor
   &__anchor {
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      color: $basic-orange;
+    }
   }
 }

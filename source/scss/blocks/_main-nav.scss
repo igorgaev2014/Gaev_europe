@@ -1,12 +1,59 @@
 .main-nav {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   // .main-nav__toggle
+  &__button {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      width: 72px;
+      height: 50px;
+      background-color: $basic-red;
+      outline: none;
+      border: none;
+    }
+  }
+
   &__toggle {
+    @media (max-width: $tablet-width) {
+      display: flex;
+      width: 22px;
+      height: 1px;
+      background-color: $basic-white;
+      position: absolute;
+      top: 24px;
+      left: 27px;
+      right: 0;
+      bottom: 0;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: -5px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 22px;
+        height: 1px;
+        z-index: 10;
+        background-color: $basic-white;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 22px;
+        height: 1px;
+        z-index: 10;
+        background-color: $basic-white;
+      }
+    }
   }
-  // .main-nav__wrapper
-  &__wrapper {
-  }
+
   // .main-nav__list
   &__list {
   }
