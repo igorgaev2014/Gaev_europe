@@ -1,14 +1,43 @@
 .promo {
-  // .promo_description
-  &__description {
-  }
-  // .promo__wrapper
+  background-image: url('../../img/promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: left;
+  padding-top: 180px;
+  padding-bottom: 308px;
+
   &__wrapper {
+    margin: 0 auto;
+    max-width: 1190px;
+    padding: 0 10px;
   }
   // .promo__title
   &__title {
+    margin: 0;
+    margin-left: 700px;
+    font-size: 55px;
+    line-height: 80px;
+    font-weight: 600;
+    max-width: 412px;
+    letter-spacing: -1.11px;
+    margin-bottom: 30px;
+    color: $basic-white;
+  }
+  // .promo_description
+  &__description {
+    margin-left: 700px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    max-width: 376px;
+    letter-spacing: -0.47px;
+    margin-bottom: 55px;
+    color: $basic-white;
   }
   // .promo__button
   &__button {
+    margin-left: 700px;
+    padding-right: 179px;
   }
 }

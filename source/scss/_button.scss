@@ -1,3 +1,20 @@
+@import "vars";
+
 .button {
   cursor: pointer;
+  color: $basic-white;
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: $basic-red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &:hover {
+    background-color: $basic-orange;
+  }
 }
