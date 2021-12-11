@@ -30,5 +30,9 @@ $font-secondary: "ProximaNova", "Arial", sans-serif;
 
 // Viewports
 
-$tablet-width: 768px;
+// mobile 320-767
+$mobile-width: 767px;
+// tablet 768-1023
+$tablet-width: 1023px;
+
 $desktop-width: 1024px;
