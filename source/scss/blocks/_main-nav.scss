@@ -3,6 +3,7 @@
   // .main-nav__toggle
   &__button {
     display: none;
+    padding: 0;
 
     @media (max-width: $tablet-width) {
       display: block;

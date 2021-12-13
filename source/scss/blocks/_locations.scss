@@ -1,15 +1,52 @@
 .locations {
   // .locations__title
   &__title {
+    margin: 0;
+    font-size: 55px;
+    line-height: 80px;
+    font-weight: 600;
+    max-width: 358px;
+    letter-spacing: -1.25px;
+    margin-bottom: 64px;
+    color: $basic-violet;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -32px;
+      width: 228px;
+      height: 4px;
+      background-color: $basic-red;
+    }
   }
   // .locations__description
   &__description {
+    max-width: 328px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: -0.47px;
+    color: rgba($basic-violet, .7);
+    margin-bottom: 35px;
   }
+
   // .locations__list
   &__list {
   }
   // .locations__item
   &__item {
+    max-width: 350px;
+    max-height: 430px;
+  }
+
+  &__country {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    font-style: normal;
   }
   // .locations__button
   &__button {
