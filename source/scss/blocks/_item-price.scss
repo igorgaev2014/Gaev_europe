@@ -57,6 +57,12 @@
       padding-left: 27px;
       padding-right: 35px;
     }
+
+    @media (max-width:$mobile-width) {
+      padding-left: 34px;
+      padding-right: 34px;
+      margin-bottom: 6px;
+    }
   }
   // .item-price__list
   &__list {
@@ -76,12 +82,21 @@
       padding-left: 25px;
       padding-bottom: 0px;
     }
+
+    @media (max-width:$mobile-width) {
+      padding-left: 29px;
+      margin-bottom: 37px;
+    }
   }
   // .item-price__item
   &__item {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 32px;
+
+    @media (max-width:$mobile-width) {
+      margin-bottom: 8px;
+    }
   }
   // .item-price__button
   &__button {
