@@ -1,69 +1,65 @@
 .main-nav {
   position: relative;
-  // .main-nav__toggle
-  &__button {
-    display: none;
-    padding: 0;
+}
 
-    @media (max-width: $tablet-width) {
-      display: block;
-      width: 72px;
-      height: 50px;
-      background-color: $basic-red;
-      outline: none;
-      border: none;
-    }
+.main-nav__button {
+  display: none;
+  padding: 0;
 
-    @media (max-width: $mobile-width) {
-      width: 50px;
-    }
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 72px;
+    height: 50px;
+    background-color: $basic-red;
+    outline: none;
+    border: none;
   }
 
-  &__toggle {
-    @media (max-width: $tablet-width) {
-      display: flex;
-      width: 22px;
-      height: 1px;
-      background-color: $basic-white;
-      position: absolute;
-      top: 24px;
-      left: 27px;
-      right: 0;
-      bottom: 0;
+  @media (max-width: $mobile-width) {
+    width: 50px;
+  }
+}
 
-      @media (max-width: $mobile-width) {
-        left: 14px;
-      }
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: -5px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 22px;
-        height: 1px;
-        z-index: 10;
-        background-color: $basic-white;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 5px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 22px;
-        height: 1px;
-        z-index: 10;
-        background-color: $basic-white;
-      }
-    }
+.main-nav__toggle {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    width: 22px;
+    height: 1px;
+    background-color: $basic-white;
+    position: absolute;
+    top: 24px;
+    left: 27px;
+    right: 0;
+    bottom: 0;
   }
 
-  // .main-nav__list
-  &__list {
+  @media (max-width: $mobile-width) {
+    left: 14px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 1px;
+    z-index: 10;
+    background-color: $basic-white;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 1px;
+    z-index: 10;
+    background-color: $basic-white;
   }
 }

@@ -6,13 +6,12 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
 
-  // .site-list__item
-  &__item {
-    margin-right: 40px;
-  }
+.site-list__item {
+  margin-right: 40px;
 
-  &__item:last-of-type {
+  &:last-of-type {
     margin-right: 0;
   }
 
@@ -23,15 +22,14 @@
     text-decoration: underline;
     margin-left: 75px;
   }
+}
 
-  // .site-list__anchor
-  &__anchor {
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
+.site-list__anchor {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
 
-    &:hover {
-      color: $basic-orange;
-    }
+  &:hover {
+    color: $basic-orange;
   }
 }
